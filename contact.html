@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="title">Voyages & Découvertes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="contact">
+
+  <!-- ========== HEADER ========== -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">&#9992;</span>
+        <h1 data-i18n="title">Voyages &amp; Découvertes</h1>
+      </a>
+
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html" data-i18n="nav_home">Accueil</a></li>
+          <li><a href="gallery.html" data-i18n="nav_gallery">Galerie</a></li>
+          <li><a href="faq.html" data-i18n="nav_faq">FAQ</a></li>
+          <li><a href="contact.html" class="nav-active" data-i18n="nav_contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button id="theme-toggle" class="btn-icon" aria-label="Toggle theme">
+          <span class="theme-icon">🌙</span>
+        </button>
+        <button id="lang-toggle" class="btn-lang" aria-label="Toggle language">
+          <span class="lang-active">FR</span> | <span class="lang-inactive">EN</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========== PAGE HERO ========== -->
+  <section class="page-hero page-hero-contact">
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content">
+      <h2 data-i18n="contact_title">Contactez-nous</h2>
+      <p data-i18n="contact_hero_subtitle">Nous serions ravis de planifier votre prochain voyage</p>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section id="contact" class="contact-section">
+    <div class="section-container">
+
+      <!-- Info cards -->
+      <div class="contact-info-row">
+        <div class="contact-info-card">
+          <span class="contact-info-icon">&#9993;</span>
+          <h3 data-i18n="contact_email_title">Email</h3>
+          <p>contact@voyages-decouvertes.com</p>
+        </div>
+        <div class="contact-info-card">
+          <span class="contact-info-icon">&#9742;</span>
+          <h3 data-i18n="contact_phone_title">Téléphone</h3>
+          <p>+33 1 23 45 67 89</p>
+        </div>
+        <div class="contact-info-card">
+          <span class="contact-info-icon">&#9872;</span>
+          <h3 data-i18n="contact_address_title">Adresse</h3>
+          <p data-i18n="contact_address">12 Rue du Voyage, 75001 Paris</p>
+        </div>
+      </div>
+
+      <!-- Contact form -->
+      <form id="contact-form" class="contact-form" novalidate>
+        <h3 data-i18n="contact_form_heading">Envoyez-nous un message</h3>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name" data-i18n="form_name_label">Nom</label>
+            <input type="text" id="name" name="name" data-i18n-placeholder="form_name_placeholder" placeholder="Votre nom">
+            <span class="error" id="name-error"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="email" data-i18n="form_email_label">Email</label>
+            <input type="email" id="email" name="email" data-i18n-placeholder="form_email_placeholder" placeholder="Votre email">
+            <span class="error" id="email-error"></span>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="message" data-i18n="form_message_label">Message</label>
+          <textarea id="message" name="message" rows="6" data-i18n-placeholder="form_message_placeholder" placeholder="Votre message (min. 10 caractères)"></textarea>
+          <span class="error" id="message-error"></span>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-lg" data-i18n="form_submit">Envoyer</button>
+        <p id="form-success" class="success hidden" data-i18n="form_success">Message envoyé avec succès !</p>
+      </form>
+
+    </div>
+  </section>
+
+  <!-- ========== MODAL ========== -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <button id="modal-close" class="modal-close-btn" aria-label="Fermer">&times;</button>
+      <div class="modal-icon">&#9993;</div>
+      <h2 data-i18n="modal_title">Abonnez-vous à notre newsletter</h2>
+      <p data-i18n="modal_text">
+        Recevez nos meilleures offres de voyage directement dans votre boîte mail !
+      </p>
+      <div class="modal-form">
+        <input type="email" id="modal-email" data-i18n-placeholder="modal_placeholder" placeholder="Votre email">
+        <button class="btn btn-primary" data-i18n="modal_subscribe">S'abonner</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="logo-icon">&#9992;</span>
+        <span data-i18n="title">Voyages &amp; Découvertes</span>
+      </div>
+      <nav class="footer-nav">
+        <a href="index.html" data-i18n="nav_home">Accueil</a>
+        <a href="gallery.html" data-i18n="nav_gallery">Galerie</a>
+        <a href="faq.html" data-i18n="nav_faq">FAQ</a>
+        <a href="contact.html" data-i18n="nav_contact">Contact</a>
+      </nav>
+      <p class="footer-copy" data-i18n="footer_copy">&copy; 2026 Voyages &amp; Découvertes. Tous droits réservés.</p>
+      <button id="open-modal-btn" class="btn btn-footer" data-i18n="footer_subscribe">S'abonner à la newsletter</button>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

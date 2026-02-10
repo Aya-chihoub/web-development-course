@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="title">Voyages & Découvertes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="home">
+
+  <!-- ========== HEADER ========== -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">&#9992;</span>
+        <h1 data-i18n="title">Voyages &amp; Découvertes</h1>
+      </a>
+
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html" class="nav-active" data-i18n="nav_home">Accueil</a></li>
+          <li><a href="gallery.html" data-i18n="nav_gallery">Galerie</a></li>
+          <li><a href="faq.html" data-i18n="nav_faq">FAQ</a></li>
+          <li><a href="contact.html" data-i18n="nav_contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button id="theme-toggle" class="btn-icon" aria-label="Toggle theme">
+          <span class="theme-icon">🌙</span>
+        </button>
+        <button id="lang-toggle" class="btn-lang" aria-label="Toggle language">
+          <span class="lang-active">FR</span> | <span class="lang-inactive">EN</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========== HERO / SLIDER ========== -->
+  <section id="hero" class="hero-section">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-tagline" data-i18n="hero_tagline">Explorez le monde avec nous</p>
+      <h2 data-i18n="slider_title">Destinations populaires</h2>
+
+      <div class="slider">
+        <div class="slider-wrapper">
+          <img id="slider-img" src="images/paris.jpg" alt="Slide">
+          <div class="slider-caption-bar">
+            <p id="slider-caption" class="slider-caption">Paris, France</p>
+            <span id="slider-counter" class="slider-counter">1 / 4</span>
+          </div>
+        </div>
+
+        <div class="slider-controls">
+          <button id="slider-prev" class="btn-slider" data-i18n="slider_prev" title="Précédent">&#10094;</button>
+          <button id="slider-play-pause" class="btn-slider btn-play" data-i18n="slider_pause" title="Pause">⏸</button>
+          <button id="slider-next" class="btn-slider" data-i18n="slider_next" title="Suivant">&#10095;</button>
+        </div>
+
+        <div class="slider-dots" id="slider-dots"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT / READ MORE ========== -->
+  <section id="about" class="about-section">
+    <div class="section-container">
+      <span class="section-badge" data-i18n="about_badge">Notre histoire</span>
+      <h2 data-i18n="about_title">À propos</h2>
+      <div class="about-card">
+        <p data-i18n="about_intro">
+          Nous sommes passionnés par les voyages et la découverte de nouvelles cultures.
+          Notre mission est de vous inspirer à explorer le monde.
+        </p>
+
+        <div id="about-more" class="hidden">
+          <p data-i18n="about_more">
+            Depuis 2010, nous avons aidé des milliers de voyageurs à planifier leurs aventures
+            à travers les cinq continents. Que vous rêviez de plages tropicales, de montagnes
+            enneigées ou de villes historiques, nous avons la destination idéale pour vous.
+            Rejoignez notre communauté et commencez votre prochaine aventure dès aujourd'hui !
+          </p>
+        </div>
+
+        <button id="read-more-btn" class="btn btn-outline" data-i18n="about_show_more">Voir plus</button>
+      </div>
+
+      <div class="stats-row">
+        <div class="stat-item">
+          <span class="stat-number">15+</span>
+          <span class="stat-label" data-i18n="stat_years">Années d'expérience</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">10K+</span>
+          <span class="stat-label" data-i18n="stat_travelers">Voyageurs satisfaits</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">50+</span>
+          <span class="stat-label" data-i18n="stat_destinations">Destinations</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CTA SECTION ========== -->
+  <section class="cta-section">
+    <div class="section-container">
+      <h2 data-i18n="cta_title">Prêt à partir ?</h2>
+      <p data-i18n="cta_text">Découvrez nos destinations et commencez à planifier votre prochain voyage.</p>
+      <div class="cta-buttons">
+        <a href="gallery.html" class="btn btn-primary btn-lg" data-i18n="cta_explore">Explorer la galerie</a>
+        <a href="contact.html" class="btn btn-outline btn-lg" data-i18n="cta_contact">Nous contacter</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== MODAL ========== -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <button id="modal-close" class="modal-close-btn" aria-label="Fermer">&times;</button>
+      <div class="modal-icon">&#9993;</div>
+      <h2 data-i18n="modal_title">Abonnez-vous à notre newsletter</h2>
+      <p data-i18n="modal_text">
+        Recevez nos meilleures offres de voyage directement dans votre boîte mail !
+      </p>
+      <div class="modal-form">
+        <input type="email" id="modal-email" data-i18n-placeholder="modal_placeholder" placeholder="Votre email">
+        <button class="btn btn-primary" data-i18n="modal_subscribe">S'abonner</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="logo-icon">&#9992;</span>
+        <span data-i18n="title">Voyages &amp; Découvertes</span>
+      </div>
+      <nav class="footer-nav">
+        <a href="index.html" data-i18n="nav_home">Accueil</a>
+        <a href="gallery.html" data-i18n="nav_gallery">Galerie</a>
+        <a href="faq.html" data-i18n="nav_faq">FAQ</a>
+        <a href="contact.html" data-i18n="nav_contact">Contact</a>
+      </nav>
+      <p class="footer-copy" data-i18n="footer_copy">&copy; 2026 Voyages &amp; Découvertes. Tous droits réservés.</p>
+      <button id="open-modal-btn" class="btn btn-footer" data-i18n="footer_subscribe">S'abonner à la newsletter</button>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

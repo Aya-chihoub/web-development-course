@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="title">Voyages & Découvertes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="faq">
+
+  <!-- ========== HEADER ========== -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">&#9992;</span>
+        <h1 data-i18n="title">Voyages &amp; Découvertes</h1>
+      </a>
+
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html" data-i18n="nav_home">Accueil</a></li>
+          <li><a href="gallery.html" data-i18n="nav_gallery">Galerie</a></li>
+          <li><a href="faq.html" class="nav-active" data-i18n="nav_faq">FAQ</a></li>
+          <li><a href="contact.html" data-i18n="nav_contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button id="theme-toggle" class="btn-icon" aria-label="Toggle theme">
+          <span class="theme-icon">🌙</span>
+        </button>
+        <button id="lang-toggle" class="btn-lang" aria-label="Toggle language">
+          <span class="lang-active">FR</span> | <span class="lang-inactive">EN</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========== PAGE HERO ========== -->
+  <section class="page-hero page-hero-faq">
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content">
+      <h2 data-i18n="faq_title">Questions fréquentes</h2>
+      <p data-i18n="faq_hero_subtitle">Tout ce que vous devez savoir avant de voyager</p>
+    </div>
+  </section>
+
+  <!-- ========== FAQ ========== -->
+  <section id="faq" class="faq-section">
+    <div class="section-container">
+
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-question">
+            <span data-i18n="faq_q1">Comment réserver un voyage ?</span>
+            <span class="faq-icon"></span>
+          </button>
+          <div class="faq-answer">
+            <p data-i18n="faq_a1">
+              Vous pouvez réserver directement sur notre site en remplissant le formulaire de contact
+              ou en nous appelant au +33 1 23 45 67 89.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span data-i18n="faq_q2">Quels modes de paiement acceptez-vous ?</span>
+            <span class="faq-icon"></span>
+          </button>
+          <div class="faq-answer">
+            <p data-i18n="faq_a2">
+              Nous acceptons les cartes bancaires (Visa, MasterCard), PayPal et les virements bancaires.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span data-i18n="faq_q3">Puis-je annuler ma réservation ?</span>
+            <span class="faq-icon"></span>
+          </button>
+          <div class="faq-answer">
+            <p data-i18n="faq_a3">
+              Oui, les annulations sont gratuites jusqu'à 30 jours avant le départ.
+              Au-delà, des frais peuvent s'appliquer selon les conditions générales.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span data-i18n="faq_q4">Proposez-vous une assurance voyage ?</span>
+            <span class="faq-icon"></span>
+          </button>
+          <div class="faq-answer">
+            <p data-i18n="faq_a4">
+              Oui, nous proposons plusieurs formules d'assurance voyage couvrant l'annulation,
+              les frais médicaux et la perte de bagages. Contactez-nous pour plus de détails.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span data-i18n="faq_q5">Les visas sont-ils inclus dans le prix ?</span>
+            <span class="faq-icon"></span>
+          </button>
+          <div class="faq-answer">
+            <p data-i18n="faq_a5">
+              Les frais de visa ne sont généralement pas inclus. Cependant, notre équipe peut
+              vous accompagner dans toutes les démarches administratives nécessaires.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- CTA after FAQ -->
+      <div class="faq-cta">
+        <p data-i18n="faq_cta_text">Vous avez d'autres questions ?</p>
+        <a href="contact.html" class="btn btn-primary btn-lg" data-i18n="faq_cta_btn">Contactez-nous</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========== MODAL ========== -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <button id="modal-close" class="modal-close-btn" aria-label="Fermer">&times;</button>
+      <div class="modal-icon">&#9993;</div>
+      <h2 data-i18n="modal_title">Abonnez-vous à notre newsletter</h2>
+      <p data-i18n="modal_text">
+        Recevez nos meilleures offres de voyage directement dans votre boîte mail !
+      </p>
+      <div class="modal-form">
+        <input type="email" id="modal-email" data-i18n-placeholder="modal_placeholder" placeholder="Votre email">
+        <button class="btn btn-primary" data-i18n="modal_subscribe">S'abonner</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="logo-icon">&#9992;</span>
+        <span data-i18n="title">Voyages &amp; Découvertes</span>
+      </div>
+      <nav class="footer-nav">
+        <a href="index.html" data-i18n="nav_home">Accueil</a>
+        <a href="gallery.html" data-i18n="nav_gallery">Galerie</a>
+        <a href="faq.html" data-i18n="nav_faq">FAQ</a>
+        <a href="contact.html" data-i18n="nav_contact">Contact</a>
+      </nav>
+      <p class="footer-copy" data-i18n="footer_copy">&copy; 2026 Voyages &amp; Découvertes. Tous droits réservés.</p>
+      <button id="open-modal-btn" class="btn btn-footer" data-i18n="footer_subscribe">S'abonner à la newsletter</button>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
