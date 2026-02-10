@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="title">Voyages & Découvertes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="gallery">
+
+  <!-- ========== HEADER ========== -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">&#9992;</span>
+        <h1 data-i18n="title">Voyages &amp; Découvertes</h1>
+      </a>
+
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html" data-i18n="nav_home">Accueil</a></li>
+          <li><a href="gallery.html" class="nav-active" data-i18n="nav_gallery">Galerie</a></li>
+          <li><a href="faq.html" data-i18n="nav_faq">FAQ</a></li>
+          <li><a href="contact.html" data-i18n="nav_contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button id="theme-toggle" class="btn-icon" aria-label="Toggle theme">
+          <span class="theme-icon">🌙</span>
+        </button>
+        <button id="lang-toggle" class="btn-lang" aria-label="Toggle language">
+          <span class="lang-active">FR</span> | <span class="lang-inactive">EN</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========== PAGE HERO ========== -->
+  <section class="page-hero">
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content">
+      <h2 data-i18n="gallery_title">Nos Destinations</h2>
+      <p data-i18n="gallery_subtitle">Découvrez les plus beaux endroits du monde</p>
+    </div>
+  </section>
+
+  <!-- ========== GALLERY GRID ========== -->
+  <section class="gallery-section">
+    <div class="gallery-container">
+
+      <div class="gallery-card">
+        <div class="gallery-card-img">
+          <img src="images/paris.jpg" alt="Paris">
+          <span class="gallery-card-tag" data-i18n="tag_europe">Europe</span>
+        </div>
+        <div class="gallery-card-body">
+          <h3 data-i18n="dest_paris">Paris, France</h3>
+          <p data-i18n="dest_paris_desc">La ville lumière, ses musées, la Tour Eiffel et sa gastronomie légendaire.</p>
+          <div class="gallery-card-footer">
+            <span class="gallery-price" data-i18n="dest_paris_price">À partir de 450€</span>
+            <a href="contact.html" class="btn btn-sm" data-i18n="dest_book">Réserver</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-card">
+        <div class="gallery-card-img">
+          <img src="images/tokyo.jpg" alt="Tokyo">
+          <span class="gallery-card-tag" data-i18n="tag_asia">Asie</span>
+        </div>
+        <div class="gallery-card-body">
+          <h3 data-i18n="dest_tokyo">Tokyo, Japon</h3>
+          <p data-i18n="dest_tokyo_desc">Un mélange unique de tradition ancestrale et de technologie futuriste.</p>
+          <div class="gallery-card-footer">
+            <span class="gallery-price" data-i18n="dest_tokyo_price">À partir de 890€</span>
+            <a href="contact.html" class="btn btn-sm" data-i18n="dest_book">Réserver</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-card">
+        <div class="gallery-card-img">
+          <img src="images/newyork.jpg" alt="New York">
+          <span class="gallery-card-tag" data-i18n="tag_americas">Amériques</span>
+        </div>
+        <div class="gallery-card-body">
+          <h3 data-i18n="dest_newyork">New York, États-Unis</h3>
+          <p data-i18n="dest_newyork_desc">La ville qui ne dort jamais : Times Square, Central Park, Broadway.</p>
+          <div class="gallery-card-footer">
+            <span class="gallery-price" data-i18n="dest_newyork_price">À partir de 650€</span>
+            <a href="contact.html" class="btn btn-sm" data-i18n="dest_book">Réserver</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-card">
+        <div class="gallery-card-img">
+          <img src="images/constantine.jpg" alt="Constantine">
+          <span class="gallery-card-tag" data-i18n="tag_africa">Afrique</span>
+        </div>
+        <div class="gallery-card-body">
+          <h3 data-i18n="dest_constantine">Constantine, Algérie</h3>
+          <p data-i18n="dest_constantine_desc">La ville des ponts suspendus, perchée sur des gorges spectaculaires.</p>
+          <div class="gallery-card-footer">
+            <span class="gallery-price" data-i18n="dest_constantine_price">À partir de 320€</span>
+            <a href="contact.html" class="btn btn-sm" data-i18n="dest_book">Réserver</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-card">
+        <div class="gallery-card-img">
+          <img src="https://picsum.photos/seed/bali3/600/400" alt="Bali">
+          <span class="gallery-card-tag" data-i18n="tag_asia">Asie</span>
+        </div>
+        <div class="gallery-card-body">
+          <h3 data-i18n="dest_bali">Bali, Indonésie</h3>
+          <p data-i18n="dest_bali_desc">Plages paradisiaques, temples sacrés et rizières en terrasses.</p>
+          <div class="gallery-card-footer">
+            <span class="gallery-price" data-i18n="dest_bali_price">À partir de 750€</span>
+            <a href="contact.html" class="btn btn-sm" data-i18n="dest_book">Réserver</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-card">
+        <div class="gallery-card-img">
+          <img src="https://picsum.photos/seed/barcelona3/600/400" alt="Barcelona">
+          <span class="gallery-card-tag" data-i18n="tag_europe">Europe</span>
+        </div>
+        <div class="gallery-card-body">
+          <h3 data-i18n="dest_barcelona">Barcelone, Espagne</h3>
+          <p data-i18n="dest_barcelona_desc">Architecture de Gaudí, plages méditerranéennes et tapas savoureuses.</p>
+          <div class="gallery-card-footer">
+            <span class="gallery-price" data-i18n="dest_barcelona_price">À partir de 380€</span>
+            <a href="contact.html" class="btn btn-sm" data-i18n="dest_book">Réserver</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========== MODAL ========== -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <button id="modal-close" class="modal-close-btn" aria-label="Fermer">&times;</button>
+      <div class="modal-icon">&#9993;</div>
+      <h2 data-i18n="modal_title">Abonnez-vous à notre newsletter</h2>
+      <p data-i18n="modal_text">
+        Recevez nos meilleures offres de voyage directement dans votre boîte mail !
+      </p>
+      <div class="modal-form">
+        <input type="email" id="modal-email" data-i18n-placeholder="modal_placeholder" placeholder="Votre email">
+        <button class="btn btn-primary" data-i18n="modal_subscribe">S'abonner</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="logo-icon">&#9992;</span>
+        <span data-i18n="title">Voyages &amp; Découvertes</span>
+      </div>
+      <nav class="footer-nav">
+        <a href="index.html" data-i18n="nav_home">Accueil</a>
+        <a href="gallery.html" data-i18n="nav_gallery">Galerie</a>
+        <a href="faq.html" data-i18n="nav_faq">FAQ</a>
+        <a href="contact.html" data-i18n="nav_contact">Contact</a>
+      </nav>
+      <p class="footer-copy" data-i18n="footer_copy">&copy; 2026 Voyages &amp; Découvertes. Tous droits réservés.</p>
+      <button id="open-modal-btn" class="btn btn-footer" data-i18n="footer_subscribe">S'abonner à la newsletter</button>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
